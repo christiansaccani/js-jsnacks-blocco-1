@@ -3,12 +3,7 @@ const digits = [];
 let numberS;
 
 
-if (number < 1000 || number > 9999) {
-
-    document.querySelector("div").innerText =
-    ` Numero non accettato, ricaricare la pagina e riprovare`;
-
-} else {
+if (typeof number == 'number' && !Number.isNaN(number) && number > 999 && number < 10000)  {
     numberS = number.toString();
 
     var sum = 0;
@@ -21,5 +16,11 @@ if (number < 1000 || number > 9999) {
 
         document.querySelector("div").innerText =
         `La somma dei valori ${digits} del numero ${number} è ${sum}`
+        
     }
-}
+    }   else {
+
+        document.querySelector("div").innerText =
+        ` Numero non accettato, ricaricare la pagina e riprovare`;
+    
+    }

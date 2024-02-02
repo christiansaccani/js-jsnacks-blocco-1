@@ -3,7 +3,7 @@ let utente;
 let position = 0;
 
 for (let i=0; i<6; i++) {
-    utente = prompt("Inserisci un valore: ");
+    utente = +prompt("Inserisci un valore: ");
 
     if (utente % 2 != 0) {
         
