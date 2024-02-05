@@ -7,8 +7,10 @@ for (let i=0; i<6; i++) {
 
     if (utente % 2 != 0) {
         
-        dispari[position] = utente;     //fatto per non lasciare slot vuoti quando numeri pari
-        position++;
+        dispari.push(utente);
+        
+        // dispari[position] = utente;     //fatto per non lasciare slot vuoti quando numeri pari
+        // position++;
     }
     
 }
